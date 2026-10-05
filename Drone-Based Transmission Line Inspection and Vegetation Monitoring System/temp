@@ -1,1 +1,137 @@
+<div align="center">
 
+# 🛸 Drone-Based Transmission Line Inspection and Vegetation Monitoring System
+
+**BRAC University** | Department of Electrical & Electronic Engineering[cite: 1]  
+**Course:** EEE359 - Engineering Project Management[cite: 1] | **Group:** 07[cite: 1]  
+
+[![Status](https://img.shields.io/badge/Project_Status-Mid_Report-blue.svg)](#)
+[![University](https://img.shields.io/badge/Institution-BRAC_University-red.svg)](https://www.bracu.ac.bd/)
+[![License](https://img.shields.io/badge/License-Academic_Use-green.svg)](#)
+
+</div>
+
+---
+
+## 📌 Executive Summary
+
+In Bangladesh, high-voltage transmission networks spanning 18,816 circuit kilometers (including 9,687 km of 132 kV lines) pass through remote rural corridors that present severe maintenance challenges[cite: 2]. Traditional manual ground patrols expose field workers to electrocution and fall hazards, while undetected hardware cracks and overgrown vegetation lead to sudden power outages[cite: 2].
+
+This project proposes an automated, drone-based aerial inspection and AI monitoring system[cite: 2]. Using a VTOL hybrid fixed-wing UAV equipped with dual RGB and thermal sensors, the platform scans transmission corridors, automatically identifies damaged components and vegetation encroachments, and uploads geo-tagged fault data directly to a GIS dashboard[cite: 2, 3, 7]. Switching to this system reduces inspection costs by up to 60% while mitigating human risk[cite: 2].
+
+---
+
+## 🎯 Key Objectives
+
+* **Automated Aerial Scanning:** Safely scan a 50 km transmission line corridor without requiring workers to manually climb high-voltage structures[cite: 3].
+* **AI Hardware Fault Detection:** Achieve at least 90% accuracy in detecting damaged grid components such as cracked insulators or broken metal fittings[cite: 3].
+* **AI Vegetation Risk Identification:** Identify tree branches encroaching on live power lines with at least 80% accuracy[cite: 3].
+* **Efficiency & Cost Optimization:** Cut grid inspection time by 50% and reduce maintenance costs for grid utility operators[cite: 3].
+* **Live GIS Dashboard:** Deliver a real-time online mapping system pinpointing exact GPS location coords for repair teams[cite: 3].
+
+---
+
+## 📊 Visuals & Diagrams
+
+### 🗺️ Project Timeline & Gantt Chart
+Phase-wise execution spanning 56 total project weeks across 10 core execution stages[cite: 10]:
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/SouvikBarmanRatul/Projects/main/gantt_chart.png" alt="DTLI-VMS Project Timeline Gantt Chart" width="850">
+</div>
+
+### 📈 Stakeholder Analysis Grids
+Analysis of project stakeholders based on Power-Influence and Power-Interest dynamics[cite: 6]:
+
+| Power vs. Influence Grid | Power vs. Interest Grid |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/SouvikBarmanRatul/Projects/main/power_influence_grid.png" alt="Power-Influence Grid" width="400"> | <img src="https://raw.githubusercontent.com/SouvikBarmanRatul/Projects/main/power_interest_grid.png" alt="Power-Interest Grid" width="400"> |
+
+---
+
+## 🔍 Project Scope
+
+### ✅ Included in Scope
+* **Target Network:** Inspection of rural ~132 kV transmission line corridors in remote areas[cite: 4].
+* **Data Collection:** Acquisition of RGB, thermal imagery, and RTK-GPS positioning data[cite: 4, 7].
+* **AI Analytics:** Automated hardware damage detection and vegetation encroachment analysis[cite: 4].
+* **GIS Mapping:** Visualizing geo-referenced faults and risk points on a digital map dashboard[cite: 4].
+* **Safety & Field Testing:** Field validation across a 50 km test corridor[cite: 3, 4].
+
+### ❌ Excluded from Scope
+* **Hardware Manufacturing:** Custom UAV frame building (utilizes commercial/adapted VTOL airframes)[cite: 4].
+* **Physical Maintenance:** Direct physical repair of transmission towers or line hardware[cite: 4].
+* **Tree Trimming Operations:** Physical vegetation clearance operations[cite: 4].
+* **Infrastructure Construction:** Erection of new transmission lines or towers[cite: 4].
+
+---
+
+## 🛠️ System Architecture & Resources
+
+### Hardware & Technical Assets
+* **UAV Platform:** VTOL (Vertical Take-off and Landing) Hybrid Fixed-Wing UAV (e.g., YF14E-PNP)[cite: 7, 11].
+* **Sensors:** Dual RGB Gimbal & Thermal Camera Gimbal[cite: 7, 11].
+* **Navigation & Positioning:** RTK-GPS Base Station & Navigation LiDAR module[cite: 7, 11].
+* **Ground Support:** Smart Battery Charger, Field Power Unit, and Telemetry Link[cite: 7, 11].
+
+### Software & Analytics
+* **Flight Planning:** Automated mission planning and ground control software[cite: 7].
+* **AI/ML Frameworks:** PyTorch / TensorFlow for target detection and vegetation indexing[cite: 7, 10].
+* **GIS Mapping Platform:** QGIS / Web-GIS Dashboard[cite: 7].
+
+---
+
+## 💰 Estimated Budget Overview
+
+> **Note:** Figures are calculated in USD and converted to BDT (Rate: 1 USD = 123.50 BDT) including a 10% contingency reserve[cite: 11].
+
+| Cost Category | USD ($) | BDT (৳) | Payment Type |
+| :--- | :---: | :---: | :---: |
+| **UAV Platform & Navigation LiDAR** | $5,070.00 | ৳626,145 | One-Time[cite: 11] |
+| **Cameras & Sensors (Dual RGB + Thermal)** | $2,200.00 | ৳271,700 | One-Time[cite: 11] |
+| **Software Licensing & GIS Platform** | $1,500.00 | ৳185,250 | Annual[cite: 11] |
+| **Field Logistics & Site Access** | $1,500.00 | ৳185,250 | Annual[cite: 11] |
+| **Spare Components & Power Units** | $1,500.00 | ৳185,250 | One-Time[cite: 11] |
+| **RTK-GPS Base Station** | $900.00 | ৳111,150 | One-Time[cite: 11] |
+| **Data Storage & Cybersecurity** | $700.00 | ৳86,450 | Annual[cite: 11] |
+| **CAAB Drone Permits & Certifications** | $1,000.00 | ৳123,500 | One-Time[cite: 11] |
+| **Sub-Total** | **$15,070.00** | **৳1,861,145** |[cite: 11] |
+| **Contingency Reserve (10%)** | **$1,507.00** | **৳186,115** |[cite: 11] |
+| **Grand Total Estimated Cost** | **$16,577.00** | **৳2,047,260** | **Total[cite: 11]** |
+
+---
+
+## ⚠️ Key Risk Register & Mitigation Strategy
+
+| Category | Risk Description | Mitigation Strategy |
+| :--- | :--- | :--- |
+| **Regulatory** | Delays in securing CAAB drone flight permits[cite: 12]. | Early application submission to CAAB ahead of flight schedules[cite: 12]. |
+| **Operational** | Adverse weather disrupting flight operations[cite: 12]. | Schedule operations during dry season with allocated contingency buffers[cite: 12]. |
+| **Technical** | AI model misclassification or false negatives[cite: 12]. | Secondary review by human domain experts for verification[cite: 12]. |
+| **Technical** | UAV battery exhaustion mid-flight[cite: 12]. | Deploy energy-efficient VTOL airframe and set multi-point charging stations[cite: 12]. |
+| **Security** | Data breach or unauthorized grid map leakage[cite: 12]. | File encryption and compliance with PGCB cybersecurity guidelines[cite: 12]. |
+
+---
+
+## 👥 Project Team & Responsibilities
+
+| Student ID | Team Member | Role | Key Responsibilities |
+| :--- | :--- | :--- | :--- |
+| **24121268** | **Oshiul Alim Ornob** | Project Manager | Project coordination, stakeholder communication, schedule tracking, PID ownership[cite: 1, 9]. |
+| **24121308** | **Alif Tamjid** | UAV / Hardware Lead | Airframe selection, sensor payload setup, SOP creation, flight testing[cite: 1, 9]. |
+| **24121307** | **Mahdi Zaman** | AI / Software Lead | Computer vision model development, fault/vegetation dataset training[cite: 1, 9]. |
+| **24121205** | **Souvik Barman Ratul** | GIS & Data Analyst | GIS dashboard implementation, grid corridor mapping, dataset processing[cite: 1, 9]. |
+| **24121249** | **Faria Rahman Oyshi** | Documentation & Risk Lead | Feasibility evaluation, cost-benefit analysis, risk register, report writing[cite: 1, 9]. |
+
+---
+
+## 📑 Key Deliverables
+
+* **Tangible:** UAV/Drone Prototype[cite: 8], Vegetation Encroachment Detection Module[cite: 8].
+* **Intangible:** UAV Design Schematics[cite: 8], Testing Data & Reports[cite: 8], Flight SOP & CAAB Permits[cite: 8], Risk & Cost-Benefit Analysis Report[cite: 8], GIS Stakeholder Presentation[cite: 8].
+
+---
+
+<div align="center">
+  <sub>Developed for EEE359: Engineering Project Management • Department of EEE, BRAC University[cite: 1]</sub>
+</div>
